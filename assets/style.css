@@ -40,21 +40,25 @@ img{
   display: none;
 }
 .btn{
-  color: rgb(163, 163, 163);
+  color: rgb(0, 0, 0);
   z-index: 9999;
   position: absolute;
   margin: 5px;
-  line-height: 20px;
   text-align: center;
-  background-color: rgb(63, 0, 0);
+  background-color: rgba(255, 255, 255, 0.296);
   border-radius: 50%;
   text-align: center;
-  height: 20px;
-  width: 20px;
-  right: -13.5%;
-  transform: translateX(50%);
+  height: 45px;
+  width: 45px;
+  right: -24.5%;
   cursor: pointer;
 }
+
+.fa-chevron-up, .fa-chevron-down {
+  line-height: 45px;
+  font-size: 2rem;
+  }
+
 .down{
 
   bottom: 0;
