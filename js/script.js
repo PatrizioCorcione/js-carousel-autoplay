@@ -12,6 +12,7 @@ const downJs = document.querySelector(".down");
 const containerSmall = document.querySelector(".container-small");
 const bagrDarkJs = document.querySelector(".bagr-dark");
 const bordGrayJs = document.querySelector(".bord-gray");
+const carouselJs = document.getElementById("carousel");
 
 
 
@@ -32,7 +33,18 @@ imgComp[0].classList.remove("hide");
 imgBagr[0].classList.add("bord-gray");
 imgBagr[0].classList.remove("bagr-dark");
 
-setInterval(scrollDown, 3000);
+let scrollJs = setInterval(scrollDown, 3000);
+
+carouselJs.addEventListener('mouseout', function() {
+  scrollJs = setInterval(scrollDown, 3000);
+});
+
+carouselJs.addEventListener('mouseover', function() {
+  clearInterval(scrollJs);
+});
+
+
+
 
 downJs.addEventListener('click',function(){
   scrollDown()
