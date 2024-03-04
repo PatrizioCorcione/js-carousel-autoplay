@@ -32,7 +32,7 @@ imgComp[0].classList.remove("hide");
 imgBagr[0].classList.add("bord-gray");
 imgBagr[0].classList.remove("bagr-dark");
 
-
+setInterval(scrollDown, 3000);
 
 downJs.addEventListener('click',function(){
   scrollDown()
